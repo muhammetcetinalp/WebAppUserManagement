@@ -1,0 +1,20 @@
+<div class="parent-container">
+    <div class="login-container">
+      <div class="header-container">
+        <h1 class="header-text">ATOS</h1>
+      </div>
+      <form [formGroup]="frm" (ngSubmit)="onSubmit()">
+        <div formGroupName="login">
+          <input class="input-field" type="text" placeholder="Kullanıcı Adı" formControlName="Username"> 
+          <br/>
+          <input class="input-field" type="text" placeholder="Parola" formControlName="Password"> 
+          <br/>
+        </div>
+        <button class="submit-button" type="submit">Kayıt Ol</button>
+        <div *ngIf="usernameExists" class="error">
+            <br>
+            This username is already taken.
+          </div>
+      </form>
+    </div>
+  </div>

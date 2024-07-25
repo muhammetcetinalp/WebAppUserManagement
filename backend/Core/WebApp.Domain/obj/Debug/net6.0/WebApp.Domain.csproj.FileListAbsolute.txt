@@ -1,0 +1,13 @@
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\bin\Debug\net6.0\WebApp.Domain.deps.json
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\bin\Debug\net6.0\WebApp.Domain.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\bin\Debug\net6.0\WebApp.Domain.pdb
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.AssemblyInfo.cs
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\refint\WebApp.Domain.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.pdb
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\ref\WebApp.Domain.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\bin\Debug\net6.0\WebApp.Domain.runtimeconfig.json
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Domain\obj\Debug\net6.0\WebApp.Domain.genruntimeconfig.cache

@@ -1,0 +1,18 @@
+<div class="parent-container">
+    <button class="signup-button" (click)="onSignUp()">Kayıt Ol</button>
+    <div class="login-container">
+      <div class="header-container">
+        <h1 class="header-text">ATOS</h1>
+      </div>
+      <form [formGroup]="frm" (ngSubmit)="onSubmit()">
+        <div formGroupName="login">
+          <input class="input-field" type="text" placeholder="Kullanıcı Adı" formControlName="Kullanici_Adi"> 
+          <br/>
+          <input class="input-field" type="password" placeholder="Parola" formControlName="Parola"> 
+          <br/>
+        </div>
+        <button class="submit-button" type="submit">Giriş</button>
+      </form>
+    </div>
+  </div>
+  

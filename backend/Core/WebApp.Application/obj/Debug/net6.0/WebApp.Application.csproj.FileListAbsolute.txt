@@ -1,0 +1,17 @@
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\bin\Debug\net6.0\WebApp.Application.deps.json
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\bin\Debug\net6.0\WebApp.Application.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\bin\Debug\net6.0\WebApp.Application.pdb
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\bin\Debug\net6.0\WebApp.Domain.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\bin\Debug\net6.0\WebApp.Domain.pdb
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.csproj.AssemblyReference.cache
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.AssemblyInfoInputs.cache
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.AssemblyInfo.cs
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.A.5467E38F.Up2Date
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\refint\WebApp.Application.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.pdb
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\ref\WebApp.Application.dll
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\bin\Debug\net6.0\WebApp.Application.runtimeconfig.json
+C:\Users\Abdullah\Desktop\DatabaseQuery\WebApp\Core\WebApp.Application\obj\Debug\net6.0\WebApp.Application.genruntimeconfig.cache

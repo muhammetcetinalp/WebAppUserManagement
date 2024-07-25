@@ -1,0 +1,205 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Infrastructure\\WebApp.Persistance\\WebApp.Persistence.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Application\\WebApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Application\\WebApp.Application.csproj",
+        "projectName": "WebApp.Application",
+        "projectPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Application\\WebApp.Application.csproj",
+        "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Domain\\WebApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Domain\\WebApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Domain\\WebApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Domain\\WebApp.Domain.csproj",
+        "projectName": "WebApp.Domain",
+        "projectPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Domain\\WebApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Infrastructure\\WebApp.Persistance\\WebApp.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Infrastructure\\WebApp.Persistance\\WebApp.Persistence.csproj",
+        "projectName": "WebApp.Persistence",
+        "projectPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Infrastructure\\WebApp.Persistance\\WebApp.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Infrastructure\\WebApp.Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Application\\WebApp.Application.csproj": {
+                "projectPath": "C:\\Users\\Abdullah\\Desktop\\DatabaseQuery\\WebApp\\Core\\WebApp.Application\\WebApp.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

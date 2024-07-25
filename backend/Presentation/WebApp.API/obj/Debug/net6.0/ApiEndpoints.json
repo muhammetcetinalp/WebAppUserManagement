@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "WebApp.API.Controllers.UserController",
+    "Method": "BulkCreateUsers",
+    "RelativePath": "api/User/bulkCreate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApp.Domain.Entities.AppUser, WebApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApp.API.Controllers.UserController",
+    "Method": "CheckUsernameExists",
+    "RelativePath": "api/User/checkUsername/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApp.API.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/User/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "WebApp.Domain.Entities.AppUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApp.API.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User/getAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

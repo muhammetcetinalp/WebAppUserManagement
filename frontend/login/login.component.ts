@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { MemberService } from 'src/app/services/member.service';
 import { Router } from '@angular/router';
 import { UserService } from '../services/user.service';
+import { signUpService } from '../services/signUp.service';
 
 @Component({
   selector: 'app-login',
@@ -17,6 +18,7 @@ export class LoginComponent {
   constructor(
     private formBuilder: FormBuilder,
     private memberService: MemberService,
+    private signUpService: signUpService,
     private router: Router,
     private userService: UserService
   ) {
@@ -31,13 +33,12 @@ export class LoginComponent {
   onSubmit() {
     if (this.frm.valid) {
       const credentials = this.frm.get('login')?.value;
-      this.memberService.getAllUsers().subscribe(
-        response => {
-          const users = response;
-          const user = users.find((u: any) => u.username === credentials.Kullanici_Adi && u.password === credentials.Parola);
+      const username = credentials.Kullanici_Adi;
+  
+      this.signUpService.getUserByUsername(username).subscribe(
+        user => {
           if (user) {
             this.memberService.setLoggedIn(true);
-            const username = credentials.Kullanici_Adi;
             this.userService.changeUsername(username);
             this.userService.changeRole(user.isAdmin === true);
             this.router.navigate(['/home']);
@@ -46,11 +47,12 @@ export class LoginComponent {
           }
         },
         error => {
-          console.error('Error fetching users', error);
+          console.error('Error fetching user', error);
         }
       );
     }
   }
+  
 
   onSignUp() {
     this.router.navigate(['/signup']);

@@ -17,6 +17,8 @@ namespace WebApp.Application.Interfaces
         Task<IEnumerable<AppUser>> CreateUsersAsync(IEnumerable<AppUser> users);
         Task<bool> UsernameExistsAsync(string username);
 
+        Task<AppUser> GetUserByUsernameAsync(string username);
+
 
     }
 

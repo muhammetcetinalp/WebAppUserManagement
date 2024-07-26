@@ -16,4 +16,7 @@
     checkUsername(username: string): Observable<boolean> {
       return this.http.get<boolean>(`${this.apiUrl}/checkUsername/${username}`);
     }
+    getUserByUsername(username: string): Observable<any> {
+      return this.http.get<any>(`${this.apiUrl}/getUserByUsername/${username}`);
+    }
   }

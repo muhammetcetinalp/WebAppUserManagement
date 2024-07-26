@@ -41,5 +41,13 @@ namespace WebApp.Persistance.Services
         {
             return await _context.AppUsers.AnyAsync(u => u.Username == username);
         }
+        public async Task<AppUser> GetUserByUsernameAsync(string username)
+        {
+            return await _context.AppUsers.FirstOrDefaultAsync(u => u.Username == username);
+        }
+
+
+
+
     }
 }

@@ -62,6 +62,21 @@ namespace WebApp.API.Controllers
             return Ok(exists);
         }
 
+        [HttpGet("getUserByUsername/{username}")]
+        public async Task<IActionResult> GetUserByUsername(string username)
+        {
+            var user = await _userService.GetUserByUsernameAsync(username);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+            return Ok(user);
+        }
+
+
+
+
+
 
     }
 }

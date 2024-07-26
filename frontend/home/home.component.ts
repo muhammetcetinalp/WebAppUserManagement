@@ -88,7 +88,7 @@ export class HomeComponent {
     
     return this.userService.getRole();
   }
-  
+
   
   sidebarClass: string = 'col-2 sidebar';
   sidebarStyle: any = {};

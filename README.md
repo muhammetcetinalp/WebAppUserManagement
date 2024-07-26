@@ -21,7 +21,6 @@ A simple web application for user management built with ASP.NET Core, Entity Fra
 1. Clone the repository:
     ```sh
     git clone  https://github.com/muhammetcetinalp/WebAppUserManagement.git
-    cd WebApp
     ```
 
 2. Set up the database:
@@ -35,7 +34,7 @@ A simple web application for user management built with ASP.NET Core, Entity Fra
 
 3. Apply migrations and create the database schema:
     ```sh
-    cd WebApp
+    cd backend
     dotnet ef database update
     ```
 
@@ -46,7 +45,7 @@ A simple web application for user management built with ASP.NET Core, Entity Fra
 
 5. Set up the frontend:
     ```sh
-    cd WebAppClient
+    cd frontend
     npm install
     ng serve
     ```
@@ -55,18 +54,19 @@ A simple web application for user management built with ASP.NET Core, Entity Fra
 
 - Open your browser and navigate to `http://localhost:4200` to access the Angular frontend.
 - Use the signup form to create new users.
-- Use the Swagger UI at `http://localhost:7272/swagger` to test the API endpoints.
+- Use the Swagger UI at `http://localhost:7274/swagger` to test the API endpoints.
 
 ### API Endpoints
 
 - `POST /api/User/create` - Create a new user
 - `GET /api/User/checkUsername/{username}` - Check if a username is available
 - `GET /api/User/getAllUsers` - Retrieve all users
+-  `GET /api/User/bulkCreate` - Create more user
 
 ### Project Structure
 
-- `WebApp`: Backend project with ASP.NET Core and Entity Framework Core
-- `WebAppClient`: Frontend project with Angular
+- `backend`: Backend project with ASP.NET Core and Entity Framework Core
+- `frontend`: Frontend project with Angular.
 
 ### Contributing
 

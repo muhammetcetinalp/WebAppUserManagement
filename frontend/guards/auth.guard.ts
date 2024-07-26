@@ -10,7 +10,6 @@ export class AuthGuard implements CanActivate {
   constructor(private memberService: MemberService, private router: Router) {}
 
   canActivate(): boolean | Observable<boolean> {
-    console.log("guard calisti");
     if (this.memberService.isLoggedIn()) {
       return true;
     } else {

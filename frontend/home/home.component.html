@@ -1,14 +1,14 @@
 <div class="container-fluid">
-    <div class="row">
-      <div [ngClass]="sidebarClass" [ngStyle]="sidebarStyle">
-        <div class="d-flex flex-column p-3 sticky-sidebar">
-          <h4><i class="fas fa-folder icon-small"></i> A-SYS</h4>
-          <div class="mb-3">
-            <form class="d-flex align-items-center">
-              <i class="fas fa-search icon-small me-1 text-muted"></i>
-              <input class="form-control form-control-sm" type="search" placeholder="Ara..." aria-label="Search">
-            </form>
-          </div>
+  <div class="row">
+    <div [ngClass]="sidebarClass" [ngStyle]="sidebarStyle">
+      <div class="d-flex flex-column p-3 sticky-sidebar">
+        <h4><i class="fas fa-folder icon-small"></i> A-SYS</h4>
+        <div class="mb-3">
+          <form class="d-flex align-items-center">
+            <i class="fas fa-search icon-small me-1 text-muted"></i>
+            <input class="form-control form-control-sm" type="search" placeholder="Ara..."  aria-label="Search">
+          </form>
+        </div>
           <ul class="nav nav-pills flex-column mb-auto">
             <li>
               <a href="javascript:void(0)" class="nav-link" (click)="toggleVarliklar()">
@@ -16,8 +16,9 @@
                 <i class="fas" [ngClass]="isVarliklarExpanded ? 'fa-chevron-up' : 'fa-chevron-down'" class="float-end"></i>
               </a>
               <ul class="nav flex-column ms-3" *ngIf="isVarliklarExpanded">
-                <li><a href="#" class="nav-link"><i class="fas fa-folder icon-small"></i> Varlık 1</a></li>
-                <li><a href="#" class="nav-link"><i class="fas fa-folder icon-small"></i> Varlık 2</a></li>
+                <li *ngFor="let varlik of varliklar">
+                  <a [routerLink]="varlik.ruoterLink" class="nav-link"><i class="fas fa-folder icon-small"></i> {{ varlik.name }}</a>
+                </li>
               </ul>
             </li>
             <li>
@@ -26,8 +27,9 @@
                 <i class="fas" [ngClass]="isStokExpanded ? 'fa-chevron-up' : 'fa-chevron-down'" class="float-end"></i>
               </a>
               <ul class="nav flex-column ms-3" *ngIf="isStokExpanded">
-                <li><a href="#" class="nav-link"><i class="fas fa-folder icon-small"></i> Stok 1</a></li>
-                <li><a href="#" class="nav-link"><i class="fas fa-folder icon-small"></i> Stok 2</a></li>
+                <li *ngFor="let stok of stok">
+                  <a [routerLink]="stok.ruoterLink" class="nav-link"><i class="fas fa-folder icon-small"></i> {{ stok.name }}</a>
+                </li>
               </ul>
             </li>
             <li>
@@ -36,8 +38,9 @@
                 <i class="fas" [ngClass]="isGuvenlikExpanded ? 'fa-chevron-up' : 'fa-chevron-down'" class="float-end"></i>
               </a>
               <ul class="nav flex-column ms-3" *ngIf="isGuvenlikExpanded">
-                <li><a href="#" class="nav-link"><i class="fas fa-folder icon-small"></i> Güvenlik 1</a></li>
-                <li><a href="#" class="nav-link"><i class="fas fa-folder icon-small"></i> Güvenlik 2</a></li>
+                <li *ngFor="let guvenlik of guvenlik">
+                  <a [routerLink]="guvenlik.ruoterLink" class="nav-link"><i class="fas fa-folder icon-small"></i> {{ guvenlik.name }}</a>
+                </li>
               </ul>
             </li>
             <li *ngIf="isAdmin()">
@@ -46,12 +49,9 @@
                 <i class="fas" [ngClass]="isYonetimExpanded ? 'fa-chevron-up' : 'fa-chevron-down'" class="float-end"></i>
               </a>
               <ul class="nav flex-column ms-3" *ngIf="isYonetimExpanded">
-                <li><a routerLink="meslek-grubu" class="nav-link"><i class="fas fa-folder icon-small"></i> Meslek Grupları</a></li>
-                <li><a routerLink="baslangic-merkezi" class="nav-link"><i class="fas fa-folder icon-small"></i> Başlangıç Merkezi Şablonları</a></li>
-                <li><a routerLink="nesne-yapilandirma" class="nav-link"><i class="fas fa-folder icon-small"></i> Nesne Yapılandırma</a></li>
-                <li><a routerLink="elemanlar" class="nav-link"><i class="fas fa-folder icon-small"></i> Elemanlar</a></li>
-                <li><a routerLink="kisiler" class="nav-link"><i class="fas fa-folder icon-small"></i> Kişiler</a></li>
-                <li><a routerLink="rapor-yoneticisi" class="nav-link"><i class="fas fa-folder icon-small"></i> Rapor Yöneticisi</a></li>
+                <li *ngFor="let yonetim of yonetim">
+                  <a [routerLink]="yonetim.ruoterLink" class="nav-link"><i class="fas fa-folder icon-small"></i> {{ yonetim.name }}</a>
+                </li>
               </ul>
             </li>
             <li *ngIf="isAdmin()">
@@ -60,7 +60,9 @@
                 <i class="fas" [ngClass]="isSistemKonfigurasyonuExpanded ? 'fa-chevron-up' : 'fa-chevron-down'" class="float-end"></i>
               </a>
               <ul class="nav flex-column ms-3" *ngIf="isSistemKonfigurasyonuExpanded">
-                <li><a routerLink="domain" class="nav-link"><i class="fas fa-folder icon-small"></i> Domains</a></li>
+                <li *ngFor="let sistem of sistemKonfig">
+                  <a [routerLink]="sistem.ruoterLink" class="nav-link"><i class="fas fa-folder icon-small"></i> {{ sistem.name }}</a>
+                </li>
               </ul>
             </li>
             <li *ngIf="isAdmin()">
@@ -69,13 +71,9 @@
                 <i class="fas" [ngClass]="isIsEmirleriExpanded ? 'fa-chevron-up' : 'fa-chevron-down'" class="float-end"></i>
               </a>
               <ul class="nav flex-column ms-3" *ngIf="isIsEmirleriExpanded">
-                <li><a routerLink="aks" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - AKS</a></li>
-                <li><a routerLink="ats" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - ATS</a></li>
-                <li><a routerLink="bs" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - BS</a></li>
-                <li><a routerLink="kads-kats" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - KADS/KATS</a></li>
-                <li><a routerLink="knl" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - KNL</a></li>
-                <li><a routerLink="endeks-oku" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - ENDEKS OKU</a></li>
-                <li><a routerLink="sa" class="nav-link"><i class="fas fa-folder icon-small"></i> İş Emri İzleme - SA</a></li>
+                <li *ngFor="let emir of isEmirleri">
+                  <a [routerLink]="emir.ruoterLink" class="nav-link"><i class="fas fa-folder icon-small"></i> {{ emir.name }}</a>
+                </li>
               </ul>
             </li>
           </ul>

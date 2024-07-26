@@ -10,6 +10,16 @@ const routes: Routes = [
     component: HomeComponent,
     canActivate: [AuthGuard],
     children: [
+
+      { path: 'varlik1',loadComponent: () => import('./components/Varliklar/varlik1').then(c => c.Varlik1Component)},
+      { path: 'varlik2',loadComponent: () => import('./components/Varliklar/varlik2').then(c => c.Varlik2Component)},
+
+      { path: 'guvenlik1',loadComponent: () => import('./components/Guvenlik/guvenlik1').then(c => c.Guvenlik1Component)},
+      { path: 'guvenlik2',loadComponent: () => import('./components/Guvenlik/guvenlik2').then(c => c.Guvenlik2Component)},
+
+      { path: 'stok1',loadComponent: () => import('./components/Stok/stok1').then(c => c.Stok1Component)},
+      { path: 'stok2',loadComponent: () => import('./components/Stok/stok2').then(c => c.Stok2Component)},
+
       { path: 'baslangic-merkezi', loadComponent: () => import('./components/Yonetim/baslangic-merkezi.component').then(c => c.BaslangicMerkeziComponent) },
       { path: 'elemanlar', loadComponent: () => import('./components/Yonetim/elemanlar.component').then(c => c.ElemanlarComponent) },
       { path: 'kisiler', loadComponent: () => import('./components/Yonetim/kisiler.component').then(c => c.KisilerComponent) },

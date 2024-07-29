@@ -62,7 +62,7 @@ A simple web application for user management built with ASP.NET Core, Entity Fra
 - `GET /api/User/checkUsername/{username}` - Check if a username is available
 - `GET /api/User/getAllUsers` - Retrieve all users
 - `GET /api/User/bulkCreate` - Create more user
-- `GET /api/User/getUsername/{username}` - get username
+- `GET /api/User/getUsername/{username}` - Get user by username
 
 ### Project Structure
 
